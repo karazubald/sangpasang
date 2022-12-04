@@ -1,0 +1,131 @@
+gem1.png
+size: 480, 240
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gem1-checked0
+  rotate: false
+  xy: 0, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-checked1
+  rotate: false
+  xy: 80, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-checked2
+  rotate: false
+  xy: 160, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-checked3
+  rotate: false
+  xy: 240, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-checked4
+  rotate: false
+  xy: 320, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-checked5
+  rotate: false
+  xy: 400, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over0
+  rotate: false
+  xy: 0, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over1
+  rotate: false
+  xy: 80, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over2
+  rotate: false
+  xy: 160, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over3
+  rotate: false
+  xy: 240, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over4
+  rotate: false
+  xy: 320, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-over5
+  rotate: false
+  xy: 400, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up0
+  rotate: false
+  xy: 0, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up1
+  rotate: false
+  xy: 80, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up2
+  rotate: false
+  xy: 160, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up3
+  rotate: false
+  xy: 240, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up4
+  rotate: false
+  xy: 320, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+gem1-up5
+  rotate: false
+  xy: 400, 160
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,110 @@
+ui.png
+size: 812, 488
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Backbtn-checked
+  rotate: false
+  xy: 721, 0
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+backbtn-over
+  rotate: false
+  xy: 0, 81
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+backbtn-up
+  rotate: false
+  xy: 0, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+button-checked
+  rotate: false
+  xy: 80, 0
+  size: 240, 80
+  orig: 240, 80
+  offset: 0, 0
+  index: -1
+button-over
+  rotate: false
+  xy: 81, 81
+  size: 241, 81
+  orig: 241, 81
+  offset: 0, 0
+  index: -1
+button-up
+  rotate: false
+  xy: 320, 0
+  size: 240, 80
+  orig: 240, 80
+  offset: 0, 0
+  index: -1
+help-checked
+  rotate: false
+  xy: 560, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+help-over
+  rotate: false
+  xy: 640, 0
+  size: 81, 80
+  orig: 81, 80
+  offset: 0, 0
+  index: -1
+help-up
+  rotate: false
+  xy: 322, 81
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+username-clicked
+  rotate: false
+  xy: 0, 162
+  size: 406, 86
+  orig: 406, 86
+  offset: 0, 0
+  index: -1
+username-over
+  rotate: false
+  xy: 406, 162
+  size: 406, 86
+  orig: 406, 86
+  offset: 0, 0
+  index: -1
+username-up
+  rotate: false
+  xy: 403, 81
+  size: 401, 81
+  orig: 401, 81
+  offset: 0, 0
+  index: -1
+userprofile-checked
+  rotate: false
+  xy: 0, 248
+  size: 241, 240
+  orig: 241, 240
+  offset: 0, 0
+  index: -1
+userprofile-over
+  rotate: false
+  xy: 241, 248
+  size: 241, 240
+  orig: 241, 240
+  offset: 0, 0
+  index: -1
+userprofile-up
+  rotate: false
+  xy: 482, 248
+  size: 241, 240
+  orig: 241, 240
+  offset: 0, 0
+  index: -1
