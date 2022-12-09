@@ -23,7 +23,7 @@ public class SplashScreen extends StagedScreen {
         final Action switchScreen = new Action() {
             @Override
             public boolean act(float delta) {
-                ScreenManager.getInstance().showScreen(ScreenEnum.MAIN_MENU, getColorTheme());
+                ScreenManager.getInstance().showScreen(ScreenEnum.GAME, getColorTheme());
                 return false;
             }
         };

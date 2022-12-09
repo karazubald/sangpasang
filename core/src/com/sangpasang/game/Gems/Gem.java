@@ -31,6 +31,7 @@ public class Gem extends Button {
     String gemName;
     String gemTheme;
     TextureAtlas gemAtlas;
+    ButtonStyle currentStyle;
     Animation<TextureRegionDrawable> upAnimation;
     Animation<TextureRegionDrawable> hoverAnimation;
     Animation<TextureRegionDrawable> downAnimation;
@@ -54,7 +55,18 @@ public class Gem extends Button {
         initHoverAnimation();
         initDownAnimation();
 
-        setStyle(new ButtonStyle());
+        currentStyle = new ButtonStyle();
+        setStyle(currentStyle);
+
+        ClickListener click = new ClickListener(){
+            @Override
+            public void enter(InputEvent event, float x, float y, int pointer, Actor fromActor) {
+                super.enter(event, x, y, pointer, fromActor);
+                currentStyle.over = hoverAnimation.getKeyFrame(currentframe, true);
+            }
+        };
+
+        addListener(click);
     }
 
     /**
@@ -105,11 +117,11 @@ public class Gem extends Button {
         currentframe += delta;
         System.out.println(currentframe);
 
-        getStyle().up = upAnimation.getKeyFrame(currentframe, true);
-        getStyle().over = hoverAnimation.getKeyFrame(currentframe, true);
-        getStyle().down = downAnimation.getKeyFrame(currentframe, true);
-        getStyle().checked = getStyle().down;
+        currentStyle.up = upAnimation.getKeyFrame(currentframe,true);
+        currentStyle.over = hoverAnimation.getKeyFrame(currentframe,true);
+        currentStyle.down = downAnimation.getKeyFrame(currentframe, true);
+        currentStyle.checked = currentStyle.down;
 
-        validate();
+        setStyle(currentStyle);
     }
 }

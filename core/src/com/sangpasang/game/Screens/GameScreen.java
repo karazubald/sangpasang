@@ -3,10 +3,8 @@ package com.sangpasang.game.Screens;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.utils.Array;
 import com.sangpasang.game.Gems.Gem;
 import com.sangpasang.game.Gems.GemEnum;
-import com.sangpasang.game.Gems.GemManager;
 import com.sangpasang.game.ui.ColorTheme;
 
 import java.security.SecureRandom;
@@ -29,16 +27,16 @@ public class GameScreen extends StagedScreen {
         for (int gemCount = 0; gemCount < gemTotal; gemCount++) {
             SecureRandom randomGenerator = new SecureRandom();
             int randomizedGemCode = randomGenerator.nextInt(3) + 1;
-            Gem gem = GemManager.getInstance().createGem(GemEnum.gem1);
+            Gem gem = null;
             switch (randomizedGemCode) {
                 case 1:
-                    gem = GemManager.getInstance().createGem(GemEnum.gem1);
+                    gem = new Gem(GemEnum.gem1, colorTheme);
                     break;
                 case 2:
-                    gem = GemManager.getInstance().createGem(GemEnum.gem2);
+                    gem = new Gem(GemEnum.gem2, colorTheme);
                     break;
                 case 3:
-                    gem = GemManager.getInstance().createGem(GemEnum.gem3);
+                    gem = new Gem(GemEnum.gem3, colorTheme);
                     break;
             }
             gemButtonGroup.add(gem);
