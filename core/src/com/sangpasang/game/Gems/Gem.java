@@ -64,6 +64,12 @@ public class Gem extends Button {
                 super.enter(event, x, y, pointer, fromActor);
                 currentStyle.over = hoverAnimation.getKeyFrame(currentframe, true);
             }
+
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                super.clicked(event, x, y);
+                currentStyle.down = downAnimation.getKeyFrame(currentframe, true);
+            }
         };
 
         addListener(click);

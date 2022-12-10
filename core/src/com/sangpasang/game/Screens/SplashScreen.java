@@ -5,7 +5,6 @@ import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
@@ -38,9 +37,6 @@ public class SplashScreen extends StagedScreen {
                 addAction(Actions.sequence(Actions.fadeOut(5f), switchScreen));
             }
         });
-        float centerWidth = (getWidth() - splashImage.getImageWidth()) / 2f;
-        float centerHeight = (getHeight() - splashImage.getImageHeight()) / 2f;
-        splashImage.setPosition(centerWidth,centerHeight);
 
         addActor(splashImage);
     }
