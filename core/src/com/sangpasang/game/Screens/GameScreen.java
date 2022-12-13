@@ -2,6 +2,7 @@ package com.sangpasang.game.Screens;
 
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.sangpasang.game.Gems.BasicGem;
 import com.sangpasang.game.Gems.Gem;
 import com.sangpasang.game.Gems.GemEnum;
 import com.sangpasang.game.ui.ColorTheme;
@@ -18,29 +19,27 @@ public class GameScreen extends StagedScreen {
         table.center();
         table.setDebug(true);
 
-        ButtonGroup<Gem> gemButtonGroup = new ButtonGroup<>();
-        gemButtonGroup.setMinCheckCount(0);
-        gemButtonGroup.setMaxCheckCount(2);
+        //ButtonGroup<Gem> gemButtonGroup = new ButtonGroup<>();
+        //gemButtonGroup.setMinCheckCount(0);
+        //gemButtonGroup.setMaxCheckCount(2);
         int gemTotal = 7;
         for (int gemCount = 0; gemCount < gemTotal; gemCount++) {
             SecureRandom randomGenerator = new SecureRandom();
             int randomizedGemCode = randomGenerator.nextInt(3) + 1;
-            Gem gem = null;
+            BasicGem gem = null;
             switch (randomizedGemCode) {
                 case 1:
-                    gem = new Gem(GemEnum.gem1, colorTheme);
+                    gem = new BasicGem(GemEnum.gem1, colorTheme);
                     break;
                 case 2:
-                    gem = new Gem(GemEnum.gem2, colorTheme);
+                    gem = new BasicGem(GemEnum.gem2, colorTheme);
                     break;
                 case 3:
-                    gem = new Gem(GemEnum.gem3, colorTheme);
+                    gem = new BasicGem(GemEnum.gem3, colorTheme);
                     break;
             }
-            gemButtonGroup.add(gem);
-        }
-        for(Gem g : gemButtonGroup.getButtons()){
-            table.add(g);
+            //gemButtonGroup.add(gem);
+            table.add(gem);
         }
 
         addActor(table);

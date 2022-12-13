@@ -57,22 +57,6 @@ public class Gem extends Button {
 
         currentStyle = new ButtonStyle();
         setStyle(currentStyle);
-
-        ClickListener click = new ClickListener(){
-            @Override
-            public void enter(InputEvent event, float x, float y, int pointer, Actor fromActor) {
-                super.enter(event, x, y, pointer, fromActor);
-                //currentStyle.over = hoverAnimation.getKeyFrame(currentframe, true);
-            }
-
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                super.clicked(event, x, y);
-                //currentStyle.down = downAnimation.getKeyFrame(currentframe, true);
-            }
-        };
-
-        addListener(click);
     }
 
     /**
@@ -122,22 +106,15 @@ public class Gem extends Button {
     public void act(float delta) {
         currentframe += delta;
         System.out.println(currentframe);
-
-        currentStyle.up = upAnimation.getKeyFrame(currentframe,true);
-        currentStyle.over = hoverAnimation.getKeyFrame(currentframe,true);
-        currentStyle.down = downAnimation.getKeyFrame(currentframe, true);
-        currentStyle.checked = currentStyle.down;
-
-        setStyle(currentStyle);
     }
 
     @Override
     public void draw(Batch batch, float parentAlpha) {
-        super.draw(batch, parentAlpha);
-
         currentStyle.up = upAnimation.getKeyFrame(currentframe,true);
         currentStyle.over = hoverAnimation.getKeyFrame(currentframe,true);
         currentStyle.down = downAnimation.getKeyFrame(currentframe, true);
         currentStyle.checked = currentStyle.down;
+
+        super.draw(batch, parentAlpha);
     }
 }
